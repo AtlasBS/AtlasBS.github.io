@@ -26,3 +26,5 @@ Solutions conçues pour ceux pour qui :
 - la souveraineté des données est un prérequis non négociable,
 - la vision 360° est gage d'auditabilité,
 - l'économie de MSUs est automatisée.
+
+Contact : nomailatlascorp@gmail.com
