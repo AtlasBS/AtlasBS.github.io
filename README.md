@@ -32,3 +32,12 @@ Solutions conçues pour ceux pour qui :
 
 # Contact
 nomailatlascorp@gmail.com
+
+<style>
+  footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+  }
+</style>
