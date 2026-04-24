@@ -22,11 +22,13 @@ Il s'agit en fait d'une clé universelle, adaptable à n'importe quel patrimoine
 Aujourd'hui, nous n'accompagnons pas seulement la modernisation technique; nous sécurisons les actifs les plus précieux des organisations : la mémoire métier, les coûts MSUs, une vision 360° jamais atteinte sur mainframe. 
 
 Solutions conçues pour ceux pour qui :
-- l'erreur n'est pas une option,
-- la souveraineté des données est un prérequis non négociable,
+
 - la vision 360° est gage d'auditabilité,
 - l'économie de MSUs est synonyme de hausse de CA,
-- décommissionner à l'aveugle coûte trop cher.
+- décommissionner à l'aveugle coûte trop cher,
+  
+- l'erreur n'est pas une option,
+- la souveraineté des données est un prérequis non négociable.
 
 # Contact
 nomailatlascorp@gmail.com
