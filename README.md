@@ -1,6 +1,6 @@
 # Mainframe | IA &amp; RAG &amp; Knowledge Graphs
 
-La mission
+# La mission
 
 Redéfinir les frontières de l'intelligence métier.
 
@@ -9,7 +9,7 @@ Notre mission est d'apporter une capacité de raisonnement autonome et auditable
 Dans un monde saturé d'informations non structurées, nous construisons les systèmes qui transforment la donnée métier en autorité décisionnelle immédiate.
 
 
-L'histoire
+# L'histoire
 
 ATLAS est né de la nécessité de résoudre l'impasse technologique entre les systèmes transactionnels historiques et les exigences d'aujourd'hui.
 
@@ -27,4 +27,4 @@ Solutions conçues pour ceux pour qui :
 - la vision 360° est gage d'auditabilité,
 - l'économie de MSUs est automatisée.
 
-Contact : nomailatlascorp@gmail.com
+# Contact : nomailatlascorp@gmail.com
