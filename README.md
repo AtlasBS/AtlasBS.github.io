@@ -17,7 +17,7 @@ Après plus de 20 ans de métier dans des environnements critiques, la vision un
 
 Seule une architecture capable d'apprendre et de restituer la connaissance avec une précision absolue peut s'imposer.
 
-Il s'agit même là d'une clé universelle, adaptable à n'importe quel patrimoine informatique.
+Il s'agit en fait d'une clé universelle, adaptable à n'importe quel patrimoine informatique.
 
 Aujourd'hui, nous n'accompagnons pas seulement la modernisation technique; nous sécurisons les actifs les plus précieux des organisations : la mémoire métier, les coûts MSUs, une vision 360° jamais atteinte sur mainframe. 
 
