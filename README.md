@@ -24,5 +24,5 @@ Aujourd'hui, nous n'accompagnons pas seulement la modernisation technique; nous 
 Solutions conçues pour ceux pour qui :
 - l'erreur n'est pas une option,
 - la souveraineté des données est un prérequis non négociable,
-- l'invisible n'est plus permise,
+- la vision 360° est gage d'auditabilité,
 - l'économie de MSUs est automatisée.
