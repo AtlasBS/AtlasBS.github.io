@@ -4,7 +4,7 @@ La mission
 
 Redéfinir les frontières de l'intelligence métier.
 
-Notre mission est d'apporter une capacité de raisonnement autonome et auditable aux infrastructures de donnés les plus massives. 
+Notre mission est d'apporter une capacité de raisonnement autonome et auditable aux infrastructures de données les plus massives. 
 
 Dans un monde saturé d'informations non structurées, nous construisons les systèmes qui transforment la donnée métier en autorité décisionnelle immédiate.
 
