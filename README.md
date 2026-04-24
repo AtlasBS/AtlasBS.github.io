@@ -27,4 +27,5 @@ Solutions conçues pour ceux pour qui :
 - la vision 360° est gage d'auditabilité,
 - l'économie de MSUs est automatisée.
 
-# Contact : nomailatlascorp@gmail.com
+# Contact
+nomailatlascorp@gmail.com
