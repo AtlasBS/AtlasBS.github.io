@@ -30,8 +30,7 @@ Solutions conçues pour ceux pour qui :
 - l'erreur n'est pas une option,
 - la souveraineté des données est un prérequis non négociable.
 
-# Contact
-nomailatlascorp@gmail.com
+# [![Contact](https://img.shields.io/badge/Email-nomailatlascorp%40gmail.com-blue?style=flat-square&logo=gmail)](mailto: nomailatlascorp@gmail.com)
 
 <style>
   footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
