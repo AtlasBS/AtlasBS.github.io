@@ -25,7 +25,8 @@ Solutions conçues pour ceux pour qui :
 - l'erreur n'est pas une option,
 - la souveraineté des données est un prérequis non négociable,
 - la vision 360° est gage d'auditabilité,
-- l'économie de MSUs est automatisée.
+- l'économie de MSUs est synonyme de hausse de CA,
+- décommissionner à l'aveugle à un prix élevé.
 
 # Contact
 nomailatlascorp@gmail.com
