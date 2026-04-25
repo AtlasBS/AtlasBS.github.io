@@ -34,7 +34,7 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
 
 > **Expertise réservée aux secteurs stratégiques.**
 
-**Email :** [nomailatlascorp@gmail.com](mailto:nomailatlascorp@gmail.com)
+**Ligne sécurisée :** [Demander un accès technique](mailto:nomailatlascorp@gmail.com)
 
 <style>
   footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
