@@ -1,36 +1,30 @@
-# Mainframe | IA &amp; RAG &amp; Knowledge Graphs
+# ATLAS
 
-# La mission
+Intelligence Opérationnelle & Haute Performance
 
-Redéfinir les frontières de l'intelligence métier.
+z/OS • Mainframe • IA Souveraine
 
-Notre mission est d'apporter une capacité de raisonnement autonome et auditable aux infrastructures de données les plus massives. 
+# ⚡ Performance & Maîtrise des Flux
 
-Dans un monde saturé d'informations non structurées, nous construisons les systèmes qui transforment la donnée métier en autorité décisionnelle immédiate.
+L'architecture ATLAS intervient sur l'efficience des environnements complexes (COBOL, JCL, DB2, PACBASE) :
+Optimisation de l'Existant : Identification des leviers de performance pour réduire la dette technique et sécuriser le patrimoine.
+Maîtrise des MSU : Stratégies de réduction de la charge processeur central pour une optimisation réelle des coûts d'exploitation.
+No Pending Time : Architecture conçue pour le traitement haute vitesse, garantissant une réponse immédiate sans latence.
 
+# 🛡️ Auditabilité & Souveraineté (R. 612-7)
 
-# L'histoire
+Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contrôle total :
+Transparence Décisionnelle : Système auditable permettant une traçabilité complète. Aucune "boîte noire", chaque résultat est vérifiable.
+Fiabilité Structurelle : Synchronisation permanente entre les données factuelles et les dépendances métier.
+Sécurité Nationale : La substance technique est protégée. Nous démontrons la compétence, nous gardons les secrets de fabrication.
 
-ATLAS est né de la nécessité de résoudre l'impasse technologique entre les systèmes transactionnels historiques et les exigences d'aujourd'hui.
+# 🏗️ Écosystème
 
-Après plus de 20 ans de métier dans des environnements critiques, la vision universelle du Mainframe s'est imposée d'elle même.
+ATLAS V1 : Cartographie sémantique et corrélation entre technique et métier.
 
-Seule une architecture capable d'apprendre et de restituer la connaissance avec une précision absolue peut s'imposer.
+ATLAS V2 : Récursion et pilotage autonome auditable pour environnements critiques.
 
-Il s'agit en fait d'une clé universelle, adaptable à n'importe quel patrimoine informatique.
-
-Aujourd'hui, nous n'accompagnons pas seulement la modernisation technique; nous sécurisons les actifs les plus précieux des organisations : la mémoire métier, les coûts MSUs, une vision 360° jamais atteinte sur mainframe. 
-
-Solutions conçues pour ceux pour qui :
-
-- la vision 360° est gage d'auditabilité,
-- l'économie de MSUs est synonyme de hausse de CA,
-- décommissionner à l'aveugle coûte trop cher,
-  
-- l'erreur n'est pas une option,
-- la souveraineté des données est un prérequis non négociable.
-
-# [![Contact](https://img.shields.io/badge/Email-nomailatlascorp%40gmail.com-blue?style=flat-square&logo=gmail)](mailto: nomailatlascorp@gmail.com)
+# 📞 [![Email](https://img.shields.io/badge/Email-nomailatlascorp%40gmail.com-blue?style=flat-square&logo=gmail)](mailto: nomailatlascorp@gmail.com)
 
 <style>
   footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
