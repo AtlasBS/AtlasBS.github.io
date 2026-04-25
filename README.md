@@ -1,4 +1,4 @@
-# 🛡️ ATLAS
+
 ### Intelligence Opérationnelle & Haute Performance
 *z/OS • Mainframe • IA • RAG • GRAPH*
 
