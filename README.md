@@ -1,5 +1,5 @@
 ### Intelligence Opérationnelle & Haute Performance
-*z/OS • Mainframe • IA • RAG • GRAPH*
+*z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH*
 <span style="display:none">mainframe atlas geoffrey lacroix</span>
 ---
 
