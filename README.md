@@ -1,6 +1,6 @@
 ### Intelligence Opérationnelle & Haute Performance
 *z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH*
-<span style="display:none">mainframe atlas geoffrey lacroix</span>
+<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm redhat kyndryl palantir dga</span>
 ---
 
 ## ⚡ Performance & Maîtrise des Flux
