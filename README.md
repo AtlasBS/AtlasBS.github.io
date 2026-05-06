@@ -14,6 +14,16 @@ L'architecture **ATLAS** intervient sur l'efficience des environnements complexe
 
 ---
 
+## 🧠 Vision & Gouvernance
+
+L'informatique n'est plus une question de code, c'est une question de contrôle et de survie industrielle. **ATLAS** répond aux enjeux critiques des décideurs :
+
+> **"Quelle est la valeur pour vous d'une sécurisation totale de votre logistique avant le départ de vos derniers experts ?"**
+
+> **"Comment souhaitez-vous intégrer cette contrainte de souveraineté nationale dans votre gouvernance informatique ?"**
+
+---
+
 ## 🔍 Auditabilité & Souveraineté (R. 612-7)
 
 Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contrôle total sur l'évolution du système :
@@ -44,4 +54,6 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
     height: 0 !important;
     padding: 0 !important;
   }
+</style>
+
 </style>
