@@ -55,5 +55,3 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
     padding: 0 !important;
   }
 </style>
-
-</style>
