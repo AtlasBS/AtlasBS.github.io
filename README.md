@@ -1,7 +1,7 @@
 ### Intelligence Opérationnelle & Haute Performance
 *z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH*
 
-<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm redhat kyndryl palantir dga souveraineté défense Denis Beau Banque de France Eurosystème</span>
+<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm redhat kyndryl palantir dga souveraineté défense denis beau banque de france eurosystème christine lagarde bce luxembourg bcl gaston reinesch belgique bnb pierre wunsch target2 autonomie stratégique européenne</span>
 ---
 
 ## ⚡ Performance & Maîtrise des Flux
