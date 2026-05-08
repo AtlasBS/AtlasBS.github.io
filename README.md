@@ -8,9 +8,9 @@
 
 L'architecture **ATLAS** intervient sur l'efficience des environnements complexes (**COBOL, JCL, DB2, PACBASE**) en priorité :
 
-* **Optimisation de l'Existant :** Identification des leviers de performance structurels pour réduire la dette technique et sécuriser le patrimoine.
-* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation de la charge processeur central et vectorisation des flux critiques pour une réduction réelle des coûts d'exploitation.
-* **No Pending Time :** Architecture de traitement haute vitesse garantissant une exécution sans latence, alignée sur les capacités physiques du hardware.
+* **Optimisation de l'Existant :** Identification des leviers de performance structurels pour réduire la dette technique et sécuriser le parc informatique.
+* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation de la charge processeur central et vectorisation du code COBOL pour une réduction réelle des coûts d'exploitation (passage d'un fonctionnement scalaire en vecteur).
+* **No Pending Time :** Architecture de traitement haute vitesse garantissant une exécution sans latence, alignée sur les capacités physiques des machines.
 
 ---
 
@@ -18,9 +18,9 @@ L'architecture **ATLAS** intervient sur l'efficience des environnements complexe
 
 L'informatique n'est plus une question de code, c'est une question de contrôle et de survie industrielle. **ATLAS** répond aux enjeux critiques des décideurs :
 
-> **"Quelle est la valeur pour votre organisation d'un système capable de traduire l'instinct de vos derniers experts en protocoles d'exécution machine ?"**
+> **"Quelle est la valeur, pour votre organisation, d'un système capable de traduire les compétences des derniers experts, en protocoles d'exécution machine ?"**
 
-> **"Comment souhaitez-vous intégrer cette contrainte de souveraineté nationale dans votre gouvernance informatique ?"**
+> **"Comment souhaitez-vous intégrer cette contrainte de souveraineté nationale dans votre gouvernance informatique ? Voir l'invisible et rendre auditable une IA a ce niveau d'enjeu."**
 
 ---
 
