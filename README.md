@@ -9,7 +9,7 @@
 L'architecture **ATLAS** intervient sur l'efficience des environnements complexes (**COBOL, JCL, DB2, PACBASE**) en priorité :
 
 * **Optimisation de l'Existant :** Identification des leviers de performance structurels pour réduire la dette technique et sécuriser le patrimoine.
-* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation de la charge processeur central par alignement structurel et vectorisation des flux critiques pour une réduction réelle des coûts d'exploitation.
+* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation de la charge processeur central et vectorisation des flux critiques pour une réduction réelle des coûts d'exploitation.
 * **No Pending Time :** Architecture de traitement haute vitesse garantissant une exécution sans latence, alignée sur les capacités physiques du hardware.
 
 ---
