@@ -24,7 +24,7 @@ L'informatique n'est plus une question de code, c'est une question de contrôle 
 
 ---
 
-## 🔍 Auditabilité & Souveraineté (R. 612-7)
+## 🔍 Auditabilité & Souveraineté
 
 Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contrôle total sur l'évolution du système :
 
