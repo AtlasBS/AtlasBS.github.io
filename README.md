@@ -3,7 +3,7 @@
 ### Intelligence Opérationnelle & Haute Performance
 *z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH • Industrialisation*
 
-<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm dette technique dette organique analyse d'impact graphe 60 millions noeuds migration souveraineté défense auditabilité modernization modernisation IBM bpce itce orion mysys</span>
+<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm dette technique dette organique analyse d'impact migration souveraineté défense auditabilité modernization modernisation IBM redhat kyndryl Luxembourg bce Espagne bpce itce orion mysys</span>
 ---
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
