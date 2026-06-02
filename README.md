@@ -47,6 +47,8 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
 
  [Prendre contact](mailto:nomailatlascorp@gmail.com)
 
+[Retour au profil professionnel](https://geoffrey-lacroix-cv.github.io)
+
 <style>
   footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
     display: none !important;
