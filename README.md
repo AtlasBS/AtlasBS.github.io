@@ -24,7 +24,7 @@ L'informatique critique n'est plus une question de devinettes, c'est une questio
 
 > **"Comment sécuriser un patrimoine logiciel en capturant le savoir des experts, pour le transformer en un graphe de connaissance auditable et pérenne ?"**
 
-> **"Comment transpercer et transmettre la connaissance aux nouveaux arrivants avec une vision laser sur un patrimoine cobol, que nous subissons tous ?"**
+> **"Comment transpercer et transmettre la connaissance aux nouveaux arrivants avec une vision laser sur un patrimoine legacy, que nous subissons tous ?"**
 > 
 ---
 
