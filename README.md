@@ -45,9 +45,9 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
 
 ## 📩 Contact
 
- [Prendre contact](mailto:nomailatlascorp@gmail.com)
+ [Prendre contact](mailto:atlasblackswan@proton.me)
 
-[Retour au profil professionnel](https://geoffrey-lacroix-cv.github.io)
+[Profil professionnel](https://geoffrey-lacroix-cv.github.io)
 
 <style>
   footer, .site-footer, .footer-col-wrapper, .site-footer-owner, .site-footer-credits {
