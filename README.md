@@ -11,7 +11,7 @@
 L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
-* **Détection de la Dette Organique :** Identification automatisée des risques du SI, personnalisés lors de la phase d'intégration. Rendre visible l'invisible pour sécuriser la continuité métier.
+* **Détection de la Dette Organique et + :** Identification personnalisée et automatisée des risques du SI. Rendre visible l'invisible pour sécuriser la continuité métier.
 * **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace.
 
 ---
