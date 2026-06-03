@@ -20,10 +20,12 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, A
 
 L'informatique critique n'est plus une question de devinettes, c'est une question de contrôle et de visibilité. **ATLAS** répond aux enjeux de modernisation sans risque :
 
-> **"Quelle est la valeur d'un système capable de cartographier des millions de nœuds de dépendances pour éclairer des décisions de migration ?"**
+> **"Quel est l'outil, totalement open source, 100% IA local, capable de cartographier des millions de nœuds de dépendances pour éclairer des décisions de migration ?"**
 
 > **"Comment sécuriser un patrimoine logiciel en capturant le savoir des experts, pour le transformer en un graphe de connaissance auditable et pérenne ?"**
 
+> **"Comment transpercer et transmettre la connaissance aux nouveaux arrivants avec un vision laser sur un patrimoine cobol, que nous subissons tous ?"**
+> 
 ---
 
 ## 🔍 Auditabilité, Souveraineté & IA Locale
