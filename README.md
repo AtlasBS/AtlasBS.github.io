@@ -8,10 +8,10 @@
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
 
-L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, Assembleur**) en une cartographie vivante et exploitable :
+L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
-* **Détection de la Dette Organique :** Identification automatisée des risques humains (facteur bus) et de la complexité cyclomatique. Rendre lisible l'inconnu pour sécuriser la continuité métier.
+* **Détection de la Dette Organique :** Identification automatisée des risques du SI, personnalisés lors de la phase d'intégration. Rendre visible l'invisible pour sécuriser la continuité métier.
 * **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace.
 
 ---
@@ -20,7 +20,7 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, Assemb
 
 L'informatique critique n'est plus une question de devinettes, c'est une question de contrôle et de visibilité. **ATLAS** répond aux enjeux de modernisation sans risque :
 
-> **"Quelle est la valeur d'un système capable de cartographier 60 millions de nœuds de dépendances pour éclairer vos décisions de migration ?"**
+> **"Quelle est la valeur d'un système capable de cartographier des millions de nœuds de dépendances pour éclairer vos décisions de migration ?"**
 
 > **"Comment sécuriser votre patrimoine logiciel en capturant le savoir des experts, pour le transformer en un graphe de connaissance auditable et pérenne ?"**
 
