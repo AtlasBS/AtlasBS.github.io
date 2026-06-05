@@ -12,7 +12,7 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, A
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
 * **Détection des Dettes technique, organique et structurelle:** Identification personnalisée et automatisée des risques du SI. Import compteurs d'utilisations, complexités cyclomatique, bus factoring, latence de propagation, dérive sémantique : vision laser. Rendre visible l'invisible pour sécuriser la continuité métier.
-* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace. Diminution des MSUs en modernizant le code prévu pour les anciennes architectures de processeur (32bits).
+* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace. Diminution des MSUs en modernizant le code prévu pour les anciennes architectures de processeur (31bits).
 
 ---
 
