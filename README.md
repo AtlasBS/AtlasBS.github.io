@@ -7,7 +7,9 @@
 ---
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
-
+<div style="text-align: center; margin: 20px 0;">
+  <img src="1.gif" alt="atlas cartographie building" style="max-width: 100%; border: 1px solid #ccc;">
+</div>
 L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
