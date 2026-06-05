@@ -7,7 +7,7 @@
 ---
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
-<div style="display: flex; justify-content: center; margin: 15px 0;">
+<div style="display: flex; justify-content: center; margin: 0px 0;">
   <img src="1.gif" alt="Importation" style="width: 100px; height: auto; border: 1px solid #ccc;">
 </div>
 L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
@@ -19,7 +19,9 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, A
 ---
 
 ## 🧠 Vision & Gouvernance par les Données
-
+<div style="display: flex; justify-content: center; margin: 0px 0;">
+  <img src="2.gif" alt="Navigation" style="width: 100px; height: auto; border: 1px solid #ccc;">
+</div>
 L'informatique critique n'est plus une question de devinettes, c'est une question de contrôle et de visibilité. **ATLAS** répond aux enjeux de modernisation sans risque :
 
 > **"Quel est l'outil, totalement open source, 100% IA locale gratuite, capable de cartographier des millions de nœuds de dépendances pour éclairer des décisions de migration ?"**
@@ -31,7 +33,9 @@ L'informatique critique n'est plus une question de devinettes, c'est une questio
 ---
 
 ## 🔍 Auditabilité, Souveraineté & IA Locale
-
+<div style="display: flex; justify-content: center; margin: 0px 0;">
+  <img src="3.gif" alt="Requête" style="width: 100px; height: auto; border: 1px solid #ccc;">
+</div>
 Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contrôle total sur l'évolution du système, en totale autonomie :
 
 * **RAG sur Graphe (Zero-Hallucination) :** L'IA interroge exclusivement votre patrimoine structuré. Réponses factuelles, basées sur des *select* sur votre graphe, validées par l'humain.
