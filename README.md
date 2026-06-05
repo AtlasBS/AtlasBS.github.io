@@ -13,7 +13,8 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, A
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
 * **Détection des Dettes technique, organique et structurelle:** Identification personnalisée et automatisée des risques du SI. Import compteurs d'utilisations, complexités cyclomatique, bus factoring, latence de propagation, dérive sémantique : vision laser. Rendre visible l'invisible pour sécuriser la continuité métier.
 * **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace. Diminution des MSUs en modernizant le code prévu pour les anciennes architectures de processeur (31bits).
-<img src="1.gif" alt="Importation" style="display: block; margin: 0 auto; width: 100px; border: 1px solid #ccc;">
+
+<img src="1.gif" alt="Importation" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
 ---
 
@@ -27,7 +28,7 @@ L'informatique critique n'est plus une question de devinettes, c'est une questio
 
 > **"Comment centraliser , mutualiser et transmettre la connaissance aux nouveaux arrivants avec une vision laser sur un patrimoine legacy, que nous subissons tous ?"**
 
-<img src="2.gif" alt="Navigation" style="display: block; margin: 0 auto; width: 100px; border: 1px solid #ccc;">
+<img src="2.gif" alt="Navigation" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
 ---
 
@@ -38,7 +39,8 @@ Conformément aux exigences des secteurs stratégiques, ATLAS garantit un contr�
 * **RAG sur Graphe (Zero-Hallucination) :** L'IA interroge exclusivement votre patrimoine structuré. Réponses factuelles, basées sur des *select* sur votre graphe, validées par l'humain.
 * **Sandbox & Confidentialité :** Déploiement interne ("On-Premise"). Vos données et votre propriété intellectuelle restent dans votre environnement. Aucune donnée ne quitte le sanctuaire.
 * **Sécurité Nationale :** La substance technique est protégée. Les brevets (INPI FR2603708 & FR2604480) garantissent la maîtrise de vos trajectoires de production.
-<img src="3.gif" alt="Requête" style="display: block; margin: 0 auto; width: 100px; border: 1px solid #ccc;">
+
+<img src="3.gif" alt="Requête" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
 ---
 
