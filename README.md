@@ -17,16 +17,22 @@ L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, A
 <img src="1.gif" alt="Importation" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
 ---
-
 ## 🧠 Vision & Gouvernance par les Données
 
-L'informatique critique n'est plus une question de devinettes, c'est une question de contrôle et de visibilité. **ATLAS** répond aux enjeux de modernisation sans risque :
+L'informatique critique n'est plus une question de devinettes, c'est une question de contrôle et de visibilité. **ATLAS** répond aux enjeux de modernisation sans risque en remplaçant le bricolage manuel par une approche industrielle.
 
-> **"Quel est l'outil, totalement open source, 100% IA locale gratuite, capable de cartographier des millions de nœuds de dépendances pour éclairer des décisions de migration ?"**
+> **"Quel est l'outil capable de remplacer les suites bureautiques artisanales par une industrialisation réelle de la connaissance ?"**
+
+La plupart des analystes du Legacy utilisent encore des suites bureautiques pour cartographier manuellement les systèmes. Ce processus, fondé sur l'extraction manuelle, le copier-coller et la bidouille de macros, est une impasse : il est lent, source d'erreurs et incapable de gérer la complexité réelle de millions de lignes de code.
+
+**ATLAS change radicalement ce paradigme :**
+* **De l'artisanat à l'industrie :** ATLAS industrialise la capture et la structuration de la connaissance de manière générique. Là où l'analyste crée des tableaux statiques, ATLAS génère une cartographie vivante, dynamique et systématique de votre Legacy.
+* **Vision Système :** ATLAS analyse la structure profonde de votre patrimoine — dépendances, typages, points de rupture — là où un tableau dynamique ne perçoit rien.
+* **Transparence & Ouverture :** Pour garantir l'auditabilité et l'évolution collaborative, ATLAS met cette puissance de structuration à disposition en Open Source. Vous ne dépendez plus d'outils propriétaires fermés ; vous accédez à un standard d'ingénierie capable de transformer la dette technique en actif stratégique.
 
 > **"Comment sécuriser un patrimoine logiciel en capturant le savoir des experts, pour le transformer en un graphe de connaissance auditable et pérenne ?"**
 
-> **"Comment centraliser , mutualiser et transmettre la connaissance aux nouveaux arrivants avec une vision laser sur un patrimoine legacy, que nous subissons tous ?"**
+> **"Comment centraliser, mutualiser et transmettre la connaissance aux nouveaux arrivants avec une vision laser sur un patrimoine legacy, devenu plat de spaghetti malgré lui et que nous subissons tous ?"**
 
 <img src="2.gif" alt="Navigation" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
