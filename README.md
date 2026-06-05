@@ -3,7 +3,7 @@
 ### Intelligence Opérationnelle & Haute Performance
 *z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH • Industrialisation*
 
-<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu ibm dette technique dette organique analyse d'impact migration souveraineté défense auditabilité modernization modernisation IBM redhat kyndryl Luxembourg bce orion mysys (ompliance DORA IA Act RGPD sécurité nationale made in france</span>
+<span style="display:none">gouvernance z/os mainframe atlas geoffrey lacroix msu dette technique dette organique analyse d'impact migration souveraineté auditabilité modernization modernisation IBM redhat kyndryl bce BPCE orion mysys compliance DORA IA Act RGPD sécurité nationale made in france capgemini sopra atos orange bussiness BNP SocGen crédit agricole cagip</span>
 ---
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
