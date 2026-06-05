@@ -7,8 +7,8 @@
 ---
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
-<div style="text-align: center; margin: 20px 0;">
-  <img src="1.gif" alt="atlas cartographie building" style="max-width: 100%; border: 1px solid #ccc;">
+<div style="display: flex; justify-content: center; margin: 15px 0;">
+  <img src="1.gif" alt="Importation" style="width: 100px; height: auto; border: 1px solid #ccc;">
 </div>
 L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
 
