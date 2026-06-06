@@ -8,7 +8,7 @@
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
 
-L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable, complément indispensable à tous les outils existants, permettant à tout CTO/CEO éclairé et garant des performances de son entreprise, de prendre des décisions avec une vision encore non permise :
+L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable, complément indispensable à tous les outils existants, permettant à tout CTO/CEO éclairé et garant des performances de son entreprise, de prendre des décisions avec une vision factuelle :
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
 * **Détection des Dettes technique, organique et structurelle:** Identification personnalisée et automatisée des risques du SI. Import compteurs d'utilisations, complexités cyclomatique, bus factoring, latence de propagation, dérive sémantique : vision laser sur un patrimoine qui a subit les transformations réglementaires, malgré lui.
