@@ -28,7 +28,7 @@ La plupart des analystes du Legacy utilisent encore des suites bureautiques pour
 **ATLAS change radicalement ce paradigme :**
 * **De l'artisanat à l'industrie :** ATLAS industrialise la capture et la structuration de la connaissance de manière générique. Là où l'analyste crée des tableaux statiques, ATLAS génère une cartographie vivante, dynamique et systématique de votre Legacy.
 * **Vision Système :** ATLAS analyse la structure profonde de votre patrimoine — dépendances, typages, points de rupture — là où un tableau dynamique ne perçoit rien.
-* **Transparence & Ouverture :** Pour garantir l'auditabilité et l'évolution collaborative, ATLAS met cette puissance de structuration à disposition en Open Source. Vous ne dépendez plus d'outils propriétaires fermés ; vous accédez à un standard d'ingénierie capable de transformer la dette technique en actif stratégique.
+* **Transparence & Ouverture :** Pour garantir l'auditabilité et l'évolution collaborative, ATLAS met cette puissance de structuration à disposition avec des briques Open Source seulement. Vous ne dépendez plus d'outils propriétaires fermés ; vous accédez à un standard d'ingénierie capable de transformer la dette technique en actif stratégique.
 
 > **"Comment sécuriser un patrimoine logiciel en capturant le savoir des experts, pour le transformer en un graphe de connaissance auditable et pérenne ?"**
 
