@@ -8,11 +8,11 @@
 
 ## ⚡ Analyse Structurelle & Maîtrise des Flux
 
-L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable :
+L'architecture **ATLAS** transforme le patrimoine complexe (**COBOL, JCL, GAP, Assembleur, Java, .NET**) en une cartographie vivante et exploitable, complément indispensable à tous les outils existants, permettant à tout CTO/CEO éclairé et garant des performances de son entreprise, de prendre des décisions avec une vision encore non permise :
 
 * **Analyse d'Impact à 100% :** Parcourez instantanément la propagation des modifications dans votre système via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.
-* **Détection des Dettes technique, organique et structurelle:** Identification personnalisée et automatisée des risques du SI. Import compteurs d'utilisations, complexités cyclomatique, bus factoring, latence de propagation, dérive sémantique : vision laser. Rendre visible l'invisible pour sécuriser la continuité métier.
-* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace. Diminution des MSUs en modernizant le code prévu pour les anciennes architectures de processeur (31bits). Aujourd'hui, IBM cest du 64 bits, donc vous payez le temps de remplissage des bits de contrôles au lieu de l'exécution de vitre patrimoine. une vision experte, en complément des outils présents.
+* **Détection des Dettes technique, organique et structurelle:** Identification personnalisée et automatisée des risques du SI. Import compteurs d'utilisations, complexités cyclomatique, bus factoring, latence de propagation, dérive sémantique : vision laser sur un patrimoine qui a subit les transformations réglementaires, malgré lui.
+* **Maîtrise de l'Empreinte MIPS/MSU :** Optimisation structurelle du code pour une réduction réelle des coûts d'exploitation par une exécution ultra-efficace. Diminution des MSUs en modernizant le code prévu pour les anciennes architectures de processeur (31bits). Aujourd'hui, IBM cest du 64 bits, donc vous payez le temps de remplissage des bits de contrôles (du vent) au lieu de l'exécution de notre patrimoine (votre chiffre d'affaire et rentabilité informatique). Seule une vision experte, en complément des outils présents, permet de rendre visible l'invisible : sécurisation de la continuité métier.
 
 <img src="1.gif" alt="Importation" style="display: block; margin: 0 auto; width: 162px; border: 1px solid #ccc;">
 
