@@ -1,5 +1,4 @@
-title: "🛡️ Atlas"
-description: "Gouvernance intelligente du Mainframe
-RAG + Knowledge Graphs | Analyse d’impact & Transmission du savoir"
+title: "Atlas - Gouvernance Mainframe"
+description: "Gouvernance intelligente du Mainframe | RAG + Knowledge Graphs | Analyse d’impact"
 theme: jekyll-theme-slate
-gui_sel: false
+show_downloads: false
