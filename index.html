@@ -137,26 +137,36 @@
     </section>
 
     <!-- CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="py-20 bg-slate-900">
         <div class="max-w-2xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-6">Prêt à reprendre le contrôle ?</h2>
             <p class="text-slate-400 mb-10">Discutons de votre patrimoine legacy et de comment Atlas peut vous aider.</p>
             
-            <form action="https://formspree.io/f/votre-id-formspree" method="POST" class="space-y-6">
-                <input type="text" name="name" placeholder="Votre nom" required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4">
-                <input type="email" name="email" placeholder="Email professionnel" required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4">
-                <textarea name="message" rows="6" placeholder="Votre message..." required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4"></textarea>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-2xl font-bold text-lg">
-                    Envoyer
+            <!-- === FORMULAIRE CORRIGÉ === -->
+            <form action="https://formspree.io/f/meewaqek" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Votre nom" required 
+                       class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
+                
+                <input type="email" name="email" placeholder="Email professionnel" required 
+                       class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500">
+                
+                <textarea name="message" rows="6" placeholder="Décrivez votre besoin (volume de code, technologies, enjeux...)" required 
+                          class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500"></textarea>
+                
+                <button type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-2xl font-bold text-lg transition">
+                    Envoyer le message
                 </button>
             </form>
+            <!-- ======================== -->
 
-            <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
+            <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center text-sm">
                 <a href="mailto:atlasblackswan@proton.me" class="flex items-center gap-3 text-blue-400 hover:text-blue-300">
                     <i class="fa-solid fa-envelope"></i> atlasblackswan@proton.me
                 </a>
                 <a href="https://geoffrey-lacroix-cv.github.io" target="_blank" class="flex items-center gap-3 text-blue-400 hover:text-blue-300">
-                    <i class="fa-solid fa-user"></i> Profil professionnel
+                    <i class="fa-solid fa-user"></i> Profil Geoffrey Lacroix
                 </a>
             </div>
         </div>
