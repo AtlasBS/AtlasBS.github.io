@@ -3,112 +3,795 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas - Gouvernance Intelligente du Mainframe</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Atlas — Gouvernance Intelligente du Mainframe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
-        .section-title { position: relative; }
-        .section-title:after {
+        :root {
+            --black: #050810;
+            --navy: #0a0f1e;
+            --surface: #0d1428;
+            --border: rgba(59,130,246,0.15);
+            --blue: #3b82f6;
+            --blue-bright: #60a5fa;
+            --cyan: #06b6d4;
+            --text: #e2e8f0;
+            --muted: #64748b;
+            --font-display: 'Syne', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+            --font-body: 'DM Sans', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--black);
+            color: var(--text);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+        }
+
+        /* ── GRID BACKGROUND ── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+            background-size: 48px 48px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 48px;
+            background: rgba(5,8,16,0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #fff;
+        }
+
+        .nav-logo span { color: var(--blue); }
+
+        .nav-links { display: flex; gap: 40px; }
+
+        .nav-links a {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--muted);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--blue-bright); }
+
+        .nav-cta {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            background: var(--blue);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover { background: #2563eb; }
+
+        /* ── HERO ── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 48px 80px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero::after {
             content: '';
             position: absolute;
-            width: 60px;
-            height: 3px;
-            background: #3b82f6;
-            bottom: -8px;
+            top: -20%;
             left: 50%;
             transform: translateX(-50%);
+            width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse, rgba(59,130,246,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(59,130,246,0.08);
+            border: 1px solid rgba(59,130,246,0.25);
+            color: var(--blue-bright);
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            padding: 8px 20px;
+            border-radius: 100px;
+            margin-bottom: 40px;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .hero-badge .dot {
+            width: 6px; height: 6px;
+            background: var(--cyan);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 7vw, 88px);
+            font-weight: 800;
+            line-height: 0.95;
+            letter-spacing: -3px;
+            max-width: 900px;
+            animation: fadeUp 0.8s 0.1s ease both;
+        }
+
+        h1 .accent { color: var(--blue); }
+        h1 .line2 { display: block; color: rgba(226,232,240,0.5); }
+
+        .hero-sub {
+            font-size: 17px;
+            color: var(--muted);
+            max-width: 560px;
+            line-height: 1.7;
+            margin-top: 28px;
+            font-weight: 300;
+            animation: fadeUp 0.8s 0.2s ease both;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 48px;
+            animation: fadeUp 0.8s 0.3s ease both;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--blue);
+            color: #fff;
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 32px rgba(59,130,246,0.3);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: var(--text);
+            font-family: var(--font-mono);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid rgba(226,232,240,0.15);
+            transition: all 0.2s;
+        }
+
+        .btn-ghost:hover {
+            border-color: rgba(226,232,240,0.35);
+            background: rgba(226,232,240,0.04);
+        }
+
+        /* ── STATS ── */
+        .stats-bar {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            background: rgba(13,20,40,0.8);
+            backdrop-filter: blur(12px);
+            overflow: hidden;
+            animation: fadeUp 0.8s 0.4s ease both;
+        }
+
+        .stat {
+            padding: 32px 40px;
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat:last-child { border-right: none; }
+
+        .stat-num {
+            font-family: var(--font-display);
+            font-size: 40px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .stat-num span { color: var(--blue); }
+
+        .stat-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            margin-top: 8px;
+            text-transform: uppercase;
+        }
+
+        /* ── DEMO GIFs ── */
+        .demo-section {
+            position: relative;
+            z-index: 1;
+            padding: 80px 48px;
+            background: var(--navy);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .demo-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            color: var(--blue);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-card {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            transition: all 0.3s;
+        }
+
+        .demo-card:hover {
+            border-color: rgba(59,130,246,0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .demo-card img {
+            width: 100%;
+            display: block;
+        }
+
+        /* ── FEATURES ── */
+        .features {
+            position: relative;
+            z-index: 1;
+            padding: 120px 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.15em;
+            color: var(--blue);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4vw, 52px);
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 80px;
+            font-weight: 300;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .feature {
+            background: var(--navy);
+            padding: 48px 40px;
+            transition: background 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--blue), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .feature:hover { background: var(--surface); }
+        .feature:hover::before { opacity: 1; }
+
+        .feature-icon {
+            width: 44px; height: 44px;
+            background: rgba(59,130,246,0.1);
+            border: 1px solid rgba(59,130,246,0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blue);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .feature h3 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* ── TERMINAL BLOCK ── */
+        .terminal-section {
+            position: relative;
+            z-index: 1;
+            padding: 80px 48px;
+            background: var(--navy);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .terminal-wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .terminal-text .section-label { text-align: left; }
+        .terminal-text .section-title { text-align: left; }
+        .terminal-text .section-sub { text-align: left; margin-bottom: 0; }
+
+        .terminal-box {
+            background: #030508;
+            border: 1px solid rgba(59,130,246,0.2);
+            border-radius: 12px;
+            overflow: hidden;
+            font-family: var(--font-mono);
+            font-size: 12px;
+        }
+
+        .terminal-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(59,130,246,0.1);
+            background: rgba(59,130,246,0.05);
+        }
+
+        .dot-red { width: 10px; height: 10px; border-radius: 50%; background: #ff5f57; }
+        .dot-yellow { width: 10px; height: 10px; border-radius: 50%; background: #febc2e; }
+        .dot-green { width: 10px; height: 10px; border-radius: 50%; background: #28c840; }
+
+        .terminal-title {
+            margin-left: 8px;
+            color: var(--muted);
+            font-size: 11px;
+            letter-spacing: 0.05em;
+        }
+
+        .terminal-body {
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .t-cmd { color: var(--blue-bright); }
+        .t-ok { color: #28c840; }
+        .t-num { color: var(--cyan); }
+        .t-muted { color: var(--muted); }
+        .t-warn { color: #febc2e; }
+
+        /* ── CONTACT ── */
+        .contact-section {
+            position: relative;
+            z-index: 1;
+            padding: 120px 48px;
+        }
+
+        .contact-wrap {
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-wrap .section-title { margin-bottom: 12px; }
+        .contact-wrap .section-sub { margin-bottom: 48px; }
+
+        .form-group { margin-bottom: 16px; text-align: left; }
+
+        .form-label {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            color: var(--muted);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 18px;
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-input:focus { border-color: rgba(59,130,246,0.5); }
+        .form-input::placeholder { color: var(--muted); }
+
+        textarea.form-input { resize: vertical; min-height: 140px; }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--blue);
+            color: #fff;
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            padding: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.2s;
+        }
+
+        .btn-submit:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 32px rgba(59,130,246,0.3);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            position: relative;
+            z-index: 1;
+            padding: 32px 48px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer .nav-logo { font-size: 16px; }
+
+        .footer-copy {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+        }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            nav { padding: 16px 24px; }
+            .nav-links { display: none; }
+            .hero { padding: 100px 24px 60px; }
+            .stats-bar { grid-template-columns: 1fr; }
+            .stat { border-right: none; border-bottom: 1px solid var(--border); }
+            .stat:last-child { border-bottom: none; }
+            .demo-section { padding: 60px 24px; }
+            .demo-grid { grid-template-columns: 1fr; }
+            .features { padding: 80px 24px; }
+            .features-grid { grid-template-columns: 1fr; }
+            .terminal-wrap { grid-template-columns: 1fr; }
+            .contact-section { padding: 80px 24px; }
+            footer { flex-direction: column; gap: 16px; text-align: center; }
+            h1 { letter-spacing: -1.5px; }
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-200">
+<body>
 
-    <section class="hero-bg py-24">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <div class="inline-flex items-center gap-3 bg-blue-950/70 text-blue-300 px-6 py-3 rounded-3xl text-sm mb-8">
-                <i class="fa-solid fa-shield-halved"></i>
-                Mainframe | IA | RAG & Knowledge Graphs
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">ATLAS<span>.</span></div>
+        <div class="nav-links">
+            <a href="#features">Fonctions</a>
+            <a href="#demo">Démo</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="nav-cta">Prendre contact →</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">
+            <div class="dot"></div>
+            MAINFRAME · IA · RAG · KNOWLEDGE GRAPHS
+        </div>
+        <h1>
+            Gouvernance<br>
+            <span class="accent">intelligente</span>
+            <span class="line2">du patrimoine legacy</span>
+        </h1>
+        <p class="hero-sub">
+            Transformez votre système Mainframe (COBOL, JCL, GAP, Assembleur…) en une cartographie vivante, interrogeable en langage naturel.
+        </p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+                <i class="fa-solid fa-envelope"></i>
+                Prendre contact
+            </a>
+            <a href="#features" class="btn-ghost">
+                Découvrir Atlas
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div style="position:relative;z-index:1;padding: 0 48px 80px; max-width:900px;margin:0 auto;">
+        <div class="stats-bar reveal">
+            <div class="stat">
+                <div class="stat-num">6<span>979</span></div>
+                <div class="stat-label">Batchs analysés</div>
             </div>
-            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Gouvernance intelligente<br>du patrimoine legacy
-            </h1>
-            <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-                Transformez votre système Mainframe (COBOL, JCL, GAP, Assembleur…) en une cartographie vivante et exploitable.
-            </p>
-            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-2xl font-semibold text-lg">
-                    Prendre contact
-                </a>
-                <a href="#features" class="border border-slate-400 hover:bg-slate-900 px-10 py-4 rounded-2xl font-semibold text-lg">
-                    Découvrir Atlas
-                </a>
+            <div class="stat">
+                <div class="stat-num">237<span>k</span></div>
+                <div class="stat-label">Nœuds cartographiés</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">74<span>s</span></div>
+                <div class="stat-label">Initialisation DB</div>
+            </div>
+        </div>
+    </div>
+
+<!-- DEMO -->
+    <section class="demo-section" id="demo">
+        <p class="demo-label">// Atlas en action</p>
+        <div class="demo-grid">
+            <div class="demo-card reveal">
+                <img src="1.gif" alt="Atlas - Importation du patrimoine">
+            </div>
+            <div class="demo-card reveal" style="transition-delay:0.1s">
+                <img src="2.gif" alt="Atlas - Navigation graphe">
+            </div>
+            <div class="demo-card reveal" style="transition-delay:0.2s">
+                <img src="3.gif" alt="Atlas - Requête RAG">
             </div>
         </div>
     </section>
 
-    <section class="py-12 bg-slate-900 border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <img src="1.gif" alt="Atlas - Importation" class="rounded-3xl shadow-2xl border border-slate-700 w-full">
-                <img src="2.gif" alt="Atlas - Navigation" class="rounded-3xl shadow-2xl border border-slate-700 w-full">
-                <img src="3.gif" alt="Atlas - Requête" class="rounded-3xl shadow-2xl border border-slate-700 w-full">
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <p class="section-label reveal">// Fonctionnalités</p>
+        <h2 class="section-title reveal">Intelligence opérationnelle<br>& haute performance</h2>
+        <p class="section-sub reveal">z/OS · Gouvernance Mainframe · IA · RAG · Graph · Industrialisation</p>
+
+        <div class="features-grid">
+            <div class="feature reveal">
+                <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <h3>Analyse d'Impact 100%</h3>
+                <p>Propagation des modifications via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.</p>
+            </div>
+            <div class="feature reveal" style="transition-delay:0.05s">
+                <div class="feature-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                <h3>Dettes & Risques</h3>
+                <p>Complexités cyclomatiques, bus factoring, dérive sémantique — identifiés automatiquement.</p>
+            </div>
+            <div class="feature reveal" style="transition-delay:0.1s">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Souveraineté & IA Locale</h3>
+                <p>Déploiement On-Premise. Vos données ne quittent jamais votre éco système.</p>
+            </div>
+            <div class="feature reveal" style="transition-delay:0.15s">
+                <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>IA Augmentée</h3>
+                <p>RAG sur graphe de connaissances pour guider vos projets de modernisation en langage naturel.</p>
+            </div>
+            <div class="feature reveal" style="transition-delay:0.2s">
+                <div class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h3>Cartographie Vivante</h3>
+                <p>Cartographie sémantique toujours à jour. JCL → PGM → Rubrique → Règles de gestion.</p>
+            </div>
+            <div class="feature reveal" style="transition-delay:0.25s">
+                <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Optimisation MIPS</h3>
+                <p>Réduisez vos coûts mainframe en identifiant les cibles de modernisation prioritaires.</p>
             </div>
         </div>
     </section>
 
-    <section id="features" class="py-20 bg-slate-950">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-title text-4xl font-bold text-center mb-4">Intelligence Opérationnelle & Haute Performance</h2>
-            <p class="text-center text-blue-400 mb-16">z/OS • Gouvernance du Mainframe • IA • RAG • GRAPH • Industrialisation</p>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-20">
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Analyse d’Impact à 100%</h3>
-                    <p class="text-slate-400 text-sm">Parcourez instantanément la propagation des modifications via le graphe. Zéro zone d'ombre, zéro dépendance oubliée.</p>
+    <!-- TERMINAL -->
+    <section class="terminal-section">
+        <div class="terminal-wrap">
+            <div class="terminal-text reveal">
+                <p class="section-label">// Résultats réels</p>
+                <h2 class="section-title" style="font-size:36px;">Opérationnel et sûr mesure</h2>
+                <p class="section-sub" style="margin-top:16px;">Atlas ingère, analyse et cartographie votre patrimoine complet en une seule commande. Aucune configuration mainframe requise.</p>
+            </div>
+            <div class="terminal-box reveal" style="transition-delay:0.15s">
+                <div class="terminal-header">
+                    <div class="dot-red"></div>
+                    <div class="dot-yellow"></div>
+                    <div class="dot-green"></div>
+                    <span class="terminal-title">atlas · import_content_pgm_git.py</span>
                 </div>
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-clipboard-list"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Dettes & Risques</h3>
-                    <p class="text-slate-400 text-sm">Identification automatisée : complexités cyclomatiques, bus factoring, dérive sémantique.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Souveraineté & IA Locale</h3>
-                    <p class="text-slate-400 text-sm">Déploiement On-Premise. Vos données ne quittent jamais le sanctuaire.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-brain"></i></div>
-                    <h3 class="text-xl font-bold mb-3">IA Augmentée</h3>
-                    <p class="text-slate-400 text-sm">Exploitez la puissance du RAG (Graphes) pour guider vos projets de modernisation.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Cartographie Vivante</h3>
-                    <p class="text-slate-400 text-sm">Maintenez une cartographie sémantique toujours à jour de votre système.</p>
-                </div>
-                <div class="bg-slate-900 p-8 rounded-3xl card-hover border border-slate-700">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Optimisation MIPS</h3>
-                    <p class="text-slate-400 text-sm">Optimisez vos coûts en modernisant le code pour les architectures modernes.</p>
+                <div class="terminal-body">
+                    <div><span class="t-warn">🚀</span> <span class="t-cmd">--- BUILD RELATIONAL DB ---</span></div>
+                    <div class="t-muted" style="margin-top:8px;">Nettoyage</div>
+                    <div><span class="t-ok">✓</span> Import sources RPP / JAVA</div>
+                    <div>  <span class="t-muted">- Dossier BATCH :</span> <span class="t-num">6 979</span> <span class="t-muted">fichiers</span></div>
+                    <div>  Import BATCH <span class="t-ok">100%</span> <span class="t-num">249.2 file/s</span></div>
+                    <div>  <span class="t-muted">- Dossier TP :</span> <span class="t-num">1 514</span> <span class="t-muted">fichiers</span></div>
+                    <div>  Import TP <span class="t-ok">100%</span> <span class="t-num">36.68 file/s</span></div>
+                    <div style="margin-top:8px;"><span class="t-ok">✓</span> Mise à jour des index</div>
+                    <div style="margin-top:12px; padding-top:12px; border-top:1px solid rgba(59,130,246,0.1);">
+                        <span class="t-warn">✨</span> <span class="t-cmd">DB initialisée en <span class="t-num">74.12s</span></span> <span class="t-warn">✨</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-slate-900">
-        <div class="max-w-2xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">Prêt à reprendre le contrôle ?</h2>
-            <form action="https://formspree.io/f/meewaqek" method="POST" class="space-y-6">
-                <input type="text" name="name" placeholder="Votre nom" required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4">
-                <input type="email" name="email" placeholder="Email professionnel" required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4">
-                <textarea name="message" rows="6" placeholder="Votre message..." required class="w-full bg-slate-800 border border-slate-600 rounded-2xl px-6 py-4"></textarea>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-5 rounded-2xl font-bold text-lg">Envoyer</button>
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="contact-wrap">
+            <p class="section-label">// Contact</p>
+            <h2 class="section-title reveal">Prêt à reprendre<br>le contrôle ?</h2>
+            <p class="section-sub reveal">Discutons de votre patrimoine et de ce qu'Atlas peut faire pour vous.</p>
+
+            <form action="https://formspree.io/f/meewaqek" method="POST" class="reveal">
+                <div class="form-group">
+                    <label class="form-label">Nom</label>
+                    <input type="text" name="name" placeholder="Votre nom" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email professionnel</label>
+                    <input type="email" name="email" placeholder="vous@entreprise.com" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea name="message" placeholder="Décrivez votre contexte mainframe..." required class="form-input"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer →</button>
             </form>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="nav-logo">ATLAS<span>.</span></div>
+        <div class="footer-copy">Brevet INPI déposé · Tous droits réservés</div>
+        <div class="footer-copy">atlasbs.github.io</div>
+    </footer>
+
+    <script>
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth anchor scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
