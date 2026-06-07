@@ -578,32 +578,35 @@
         
       /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
-        /* Forcer la largeur totale pour le corps du site */
-            body, html {
-                width: 100%;
-                overflow-x: hidden;
-            }
-            /* Garantir que les sections principales occupent toute la largeur */
-            .hero, .stats-bar, .demo-section, .features, .terminal-section, .contact-section {
-                padding-left: 24px !important;
-                padding-right: 24px !important;
-                width: 100% !important;
-                box-sizing: border-box;
-            }
-            nav { 
-                padding: 16px 24px; 
-                flex-direction: column; 
-                gap: 16px; 
-                align-items: center; 
-            }
-            .nav-links { 
-                display: none; 
-            }
-            .nav-cta { 
-                width: 100%; 
-                text-align: center; 
-                display: block; 
-            }
+    nav {
+        padding: 10px 20px !important; 
+        flex-direction: row !important; /* Force la ligne */
+        justify-content: space-between !important; /* Écarte les éléments */
+        align-items: center !important;
+        height: auto !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Le logo prend la gauche */
+    .nav-logo {
+        font-size: 1.2rem !important;
+        margin: 0 !important;
+    }
+
+    /* Le bouton prend la droite, compact */
+    .nav-cta {
+        width: auto !important;
+        padding: 6px 12px !important;
+        font-size: 0.85rem !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    /* On cache les liens de nav qui ne servent à rien sur mobile en haut */
+    .nav-links {
+        display: none !important;
+    }
             .hero { padding: 100px 24px 60px; }
             .stats-bar { grid-template-columns: 1fr; }
             .stat { border-right: none; border-bottom: 1px solid var(--border); }
