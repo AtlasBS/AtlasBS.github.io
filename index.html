@@ -575,24 +575,32 @@
             opacity: 1;
             transform: translateY(0);
         }
+        
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-    /* Forcer la largeur totale pour le corps du site */
     body, html {
         width: 100%;
         overflow-x: hidden;
     }
 
-    /* 1. Correction majeure : On force le hero et le bandeau à être visibles immédiatement */
+    /* Le hero est minimaliste pour tout montrer */
     .hero {
-        height: auto !important; /* On annule toute hauteur fixe (100vh) */
+        height: auto !important;
         min-height: auto !important;
-        padding: 60px 24px 40px !important; /* Ajustement du padding haut */
+        padding: 10px 24px 20px !important; /* Padding haut drastiquement réduit */
         display: flex !important;
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
-    /* 2. Garantir que les sections principales occupent toute la largeur */
+    /* On force l'affichage du conteneur de tags (si c'est bien lui ton bandeau) */
+    .hero .tags, .hero .banner, .hero-tags {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 0 !important;
+        order: -1; /* Force le passage en premier dans le flex */
+    }
+
     .hero, .stats-bar, .demo-section, .features, .terminal-section, .contact-section {
         padding-left: 24px !important;
         padding-right: 24px !important;
@@ -600,41 +608,20 @@
         box-sizing: border-box;
     }
 
-    nav { 
-        padding: 16px 24px; 
-        flex-direction: column; 
-        gap: 16px; 
-        align-items: center; 
-    }
-
-    .nav-links { 
-        display: none; 
-    }
-
-    .nav-cta { 
-        width: 100%; 
-        text-align: center; 
-        display: block; 
-    }
+    nav { padding: 10px 24px; flex-direction: column; gap: 8px; align-items: center; }
+    .nav-links { display: none; }
+    .nav-cta { width: 100%; text-align: center; display: block; }
 
     .stats-bar { grid-template-columns: 1fr; }
     .stat { border-right: none; border-bottom: 1px solid var(--border); }
     .stat:last-child { border-bottom: none; }
-    .demo-section { padding: 60px 24px; }
-    .demo-grid { grid-template-columns: 1fr; }
-    .features { padding: 80px 24px; }
-    .features-grid { grid-template-columns: 1fr; }
-    .terminal-wrap { grid-template-columns: 1fr; }
-    .contact-section { padding: 80px 24px; }
+    .demo-section, .features, .contact-section { padding: 40px 24px; }
+    .demo-grid, .features-grid, .terminal-wrap { grid-template-columns: 1fr; }
     
     footer { flex-direction: column; gap: 16px; text-align: center; }
     
-    h1 { 
-        letter-spacing: -1.5px;
-        font-size: 2rem; /* Réduit un peu pour éviter les coupures */
-    }
+    h1 { letter-spacing: -1.5px; font-size: 1.5rem; } /* Taille texte réduite pour dégager l'espace */
 }
-
         
     </style>
 </head>
