@@ -578,6 +578,18 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
+        /* Forcer la largeur totale pour le corps du site */
+            body, html {
+                width: 100%;
+                overflow-x: hidden;
+            }
+            /* Garantir que les sections principales occupent toute la largeur */
+            .hero, .stats-bar, .demo-section, .features, .terminal-section, .contact-section {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
+                width: 100% !important;
+                box-sizing: border-box;
+            }
             nav { 
                 padding: 16px 24px; 
                 flex-direction: column; 
