@@ -578,8 +578,20 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
-            nav { padding: 16px 24px; }
-            .nav-links { display: none; }
+            nav { 
+                padding: 16px 24px; 
+                flex-direction: column; 
+                gap: 16px; 
+                align-items: center; 
+            }
+            .nav-links { 
+                display: none; 
+            }
+            .nav-cta { 
+                width: 100%; 
+                text-align: center; 
+                display: block; 
+            }
             .hero { padding: 100px 24px 60px; }
             .stats-bar { grid-template-columns: 1fr; }
             .stat { border-right: none; border-bottom: 1px solid var(--border); }
@@ -593,6 +605,7 @@
             footer { flex-direction: column; gap: 16px; text-align: center; }
             h1 { letter-spacing: -1.5px; }
         }
+        
     </style>
 </head>
 <body>
