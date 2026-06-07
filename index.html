@@ -47,56 +47,39 @@
             z-index: 0;
         }
 
-        /* ── NAV ── */
-        nav {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 48px;
-            background: rgba(5,8,16,0.85);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-        }
+/* ── NAV MODIFIÉE ── */
+nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 48px; /* Réduit de 20px à 12px pour affiner */
+    background: rgba(5,8,16,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+}
 
-        .nav-logo {
-            font-family: var(--font-display);
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: #fff;
-        }
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 18px; /* Réduit de 22px pour une meilleure proportion */
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #fff;
+}
 
-        .nav-logo span { color: var(--blue); }
-
-        .nav-links { display: flex; gap: 40px; }
-
-        .nav-links a {
-            font-family: var(--font-mono);
-            font-size: 12px;
-            color: var(--muted);
-            text-decoration: none;
-            letter-spacing: 0.05em;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover { color: var(--blue-bright); }
-
-        .nav-cta {
-            font-family: var(--font-mono);
-            font-size: 12px;
-            background: var(--blue);
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            letter-spacing: 0.05em;
-            transition: background 0.2s;
-        }
-
-        .nav-cta:hover { background: #2563eb; }
+.nav-cta {
+    font-family: var(--font-mono);
+    font-size: 11px; /* Légèrement réduit */
+    background: var(--blue);
+    color: #fff;
+    padding: 8px 18px; /* Bouton plus compact */
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: background 0.2s;
+}
 
         /* ── HERO ── */
         .hero {
