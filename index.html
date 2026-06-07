@@ -46,41 +46,56 @@
             pointer-events: none;
             z-index: 0;
         }
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 48px;
+            background: rgba(5,8,16,0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
 
-/* ── NAV RECADRÉE ET FIXÉE ── */    
- /* ── BANDEAU FIXE ET COMPACT ── */
-nav {
-    position: sticky; /* Reste en haut au scroll */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background: rgba(5, 8, 16, 0.95); /* Fond opaque pour la lisibilité */
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    box-sizing: border-box;
-    height: 50px;
-}
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #fff;
+        }
 
-/* Force le bouton à ne pas élargir la page */
-.nav-cta {
-    font-size: 10px;
-    padding: 6px 12px;
-    white-space: nowrap;
-    margin-left: 10px;
-    flex-shrink: 0;
-}
+        .nav-logo span { color: var(--blue); }
 
-/* Assure que rien ne déborde horizontalement */
-body {
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-}
+        .nav-links { display: flex; gap: 40px; }
+
+        .nav-links a {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--muted);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--blue-bright); }
+
+        .nav-cta {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            background: var(--blue);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+
+        .nav-cta:hover { background: #2563eb; }
         
         /* ── HERO ── */
         .hero {
