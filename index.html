@@ -47,40 +47,44 @@
             z-index: 0;
         }
 
-/* ── NAV RECADRÉE ET FIXÉE ── */
+/* ── NAV RECADRÉE ET FIXÉE ── */    
+        /* ── CORRECTION DU BANDEAU ET DU CONTENEUR ── */
 nav {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0; 
+    left: 0; 
+    width: 100vw; /* Force la largeur de l'écran */
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    padding: 0 48px; /* On garde les marges latérales pour aligner avec le contenu */
+    padding: 10px 20px; /* Plus serré pour le mobile */
     background: rgba(5,8,16,0.85);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
-    width: 100%;     /* Force la largeur totale */
-    box-sizing: border-box; /* Crucial pour que le padding n'ajoute pas de largeur */
+    box-sizing: border-box; /* Crucial pour ne pas dépasser */
 }
 
-.nav-links { 
-    display: flex; 
-    gap: 30px; 
-    margin-right: auto; /* Pousse les liens vers la gauche */
-    margin-left: 40px;  /* Espace entre logo et liens */
-}
+.nav-links { display: none; } /* Caché sur mobile, comme prévu */
 
 .nav-cta {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 10px; /* Plus petit pour ne pas élargir la page */
     background: var(--blue);
     color: #fff;
-    padding: 6px 14px;
+    padding: 6px 12px;
     border-radius: 4px;
     text-decoration: none;
-    white-space: nowrap; /* Empêche le texte du bouton de s'étaler */
-    flex-shrink: 0;      /* Empêche le bouton de s'agrandir */
+    white-space: nowrap;
+    margin-left: auto; /* Aligne le bouton à droite proprement */
+}
+
+/* ── SÉCURITÉ POUR ÉVITER LE MODE PAYSAGE ── */
+body {
+    width: 100vw;
+    overflow-x: hidden; /* Coupe tout ce qui dépasse horizontalement */
+    margin: 0;
+    padding: 0;
 }
         
 
